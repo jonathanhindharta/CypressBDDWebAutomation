@@ -62,9 +62,9 @@ And("The user click Check Out Button", ()=>{
 
 })
 
-And("The user fills in Last Name and ZIP Code only", (dataTable)=>{
+And("The user fills in First Name and ZIP Code only", (dataTable)=>{
     dataTable.hashes().forEach(element => {
-        informationPage.getLastNameInput().type(element.LastName)
+        informationPage.getFirstNameInput().type(element.FirstName)
         informationPage.getZipPostalCodeInput().type(element.PostalCode)
     });
 })
@@ -73,6 +73,6 @@ And("The user clicks the Continue button", ()=>{
     informationPage.getContinueButton().click()
 })
 
-Then("Then the user will see warning message 'Error: First Name is required'", ()=>{
-    informationPage.getFirstNameErrorMessageH3().should('be.visible')
+Then("Then the user will see warning message 'Error: Last Name is required'", ()=>{
+    informationPage.getLastNameErrorMessageH3().should('be.visible')
 })

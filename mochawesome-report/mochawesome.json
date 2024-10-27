@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2024-10-27T09:27:59.557Z",
-    "end": "2024-10-27T09:28:13.900Z",
-    "duration": 14343,
+    "failures": 0,
+    "start": "2024-10-27T13:47:48.888Z",
+    "end": "2024-10-27T13:47:53.531Z",
+    "duration": 4643,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "0c411eae-db31-4a6d-a892-d5f5ee6a6690",
+      "uuid": "11cbd026-20f2-42f2-be6e-ae8f277a7ceb",
       "title": "",
-      "fullFile": "cypress\\e2e\\checkOutOneProductNotFillMandatoryData.feature",
-      "file": "cypress\\e2e\\checkOutOneProductNotFillMandatoryData.feature",
+      "fullFile": "cypress\\e2e\\checkOutOneProductOnlyFillFirstNameZipCode.feature",
+      "file": "cypress\\e2e\\checkOutOneProductOnlyFillFirstNameZipCode.feature",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "b099c0e1-c161-4aea-85b2-7f020b280176",
+          "uuid": "0d307eb9-cf32-4b10-b62c-327de519f470",
           "title": "Check Out Product on Sauce Demo",
           "fullFile": "",
           "file": "",
@@ -35,36 +35,32 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Check out 1 product from https://www.saucedemo.com/, but not fill madantory data on Information Page",
-              "fullTitle": "Check Out Product on Sauce Demo Check out 1 product from https://www.saucedemo.com/, but not fill madantory data on Information Page",
+              "title": "Check out 1 product from https://www.saucedemo.com/, with only fill First Name and Zip Code on Information Page",
+              "fullTitle": "Check Out Product on Sauce Demo Check out 1 product from https://www.saucedemo.com/, with only fill First Name and Zip Code on Information Page",
               "timedOut": null,
-              "duration": 12601,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 2905,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Error: First Name, Last Name, and Password is required' within the element: <h3> but never did.",
-                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Error: First Name, Last Name, and Password is required' within the element: <h3> but never did.\n    at Context.eval (cypress/e2e/checkOutOneProductNotFillMandatoryData/checkOutOneProductNotFillMandatoryDataStepDefinition.js:68:55)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
-                "diff": null
-              },
-              "uuid": "529b207a-93d9-49dc-935b-61daf6931519",
-              "parentUUID": "b099c0e1-c161-4aea-85b2-7f020b280176",
+              "err": {},
+              "uuid": "d67a583d-99a0-4fe2-af26-4d46bf41d9ae",
+              "parentUUID": "0d307eb9-cf32-4b10-b62c-327de519f470",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "529b207a-93d9-49dc-935b-61daf6931519"
+          "passes": [
+            "d67a583d-99a0-4fe2-af26-4d46bf41d9ae"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12601,
+          "duration": 2905,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

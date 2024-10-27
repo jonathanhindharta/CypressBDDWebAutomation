@@ -38,6 +38,10 @@ class InformationPage//function to return xpath of each object in cart page
     getMandatoryFieldErrorMessageH3(){
         return  cy.get('h3[data-test="error"]').contains('Error: First Name, Last Name, and Password is required') 
     }
+
+    getLastNameErrorMessageH3(){
+        return  cy.get('h3[data-test="error"]').contains('Error: Last Name is required') 
+    }
 }
 
 export default InformationPage;
