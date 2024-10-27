@@ -1,5 +1,6 @@
 # Cypress Web BDD Automation
-
+Cypress Example Web BDD Automation By Jonathan Hindharta
+-----------------------------------
 Required Softwares
 - Node.js
 - Cypress
@@ -7,7 +8,6 @@ Required Softwares
 - Visual studio Code editior
 
 -----------------------------------
-Cypress Example Web BDD Automation By Jonathan Hindharta
 - For E2ETestID-001 Test Case : Sort Sauce Demo Product List By Name A to Z, it can be found in file sortProductByNameAtoZ.feature
 - For E2ETestID-002 Test Case : Sort Sauce Demo Product List By Name Z to A, it can be found in file sortProductByNameZtoA.feature
 - For E2ETestID-003 Test Case : Sort Sauce Demo Product List By Price (low to high), it can be found in file sortProductByPriceLowtoHigh.feature
